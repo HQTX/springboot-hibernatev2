@@ -1,11 +1,16 @@
-<!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
-    <meta charset="utf-8"/>
-    <title>ConanZhang的首页</title>
+    <meta charset="UTF-8" />
+    <title>Insert title here</title>
 </head>
 <body>
-我是首页：
-<!--<image th:src="@{/image/267862-1212151Z12099.jpg}"/> -->
+<a th:href="@{http://blog.csdn.net/u012706811}">绝对路径</a>
+<h1 th:inlines="text">Hello</h1>
+<p th:text="${hello }"></p>
 </body>
 </html>
